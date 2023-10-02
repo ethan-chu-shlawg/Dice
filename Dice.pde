@@ -54,7 +54,6 @@ class Die //models one single dice cube
           if((sumX == 0)||(sumX == 3))
             ellipse(x+shiftX,y+shiftY,circleSize,circleSize);
           sumX++;
-          dotSum+=2;
         }
        }
     }else if (dots == 3){
@@ -84,6 +83,7 @@ class Die //models one single dice cube
        }
       ellipse(12+shiftX,12+shiftY,circleSize,circleSize);
     }else{
+      dotSum+=6;
       for(int y = 6 ; y <= 18; y+=6){
         for(int x = 6; x<=18; x+=12){
             ellipse(x+shiftX,y+shiftY,circleSize,circleSize);
